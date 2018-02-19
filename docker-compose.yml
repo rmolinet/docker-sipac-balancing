@@ -25,7 +25,8 @@ services:
         extra_hosts:
             - "dockerhost:172.17.0.1"
         volumes:
-            - ../Docker-SIPAC/conf/sipac_2.4:/usr/local/apache2/htdocs/sipac_2.4
+            #Siguiente linea especificar la direccion con el codigo fuente de sipac.
+            #- ./conf/sipac_2.4:/usr/local/apache2/htdocs/sipac_2.4
             - ./conf/php.ini:/usr/local/etc/php/php.ini
             #- ./conf/kcachegrind_files:/usr/local/reportes_kcachegrind
         container_name: php5_fpm
@@ -37,7 +38,8 @@ services:
         links:
             - php_sipac:php_sipac
         volumes:
-            - ../Docker-SIPAC/conf/sipac_2.4:/usr/local/apache2/htdocs/sipac_2.4
+            #Siguiente linea especificar la direccion con el codigo fuente de sipac.
+            #- ./conf/sipac_2.4:/usr/local/apache2/htdocs/sipac_2.4
             - ./conf/apache2/httpd.conf:/usr/local/apache2/conf/httpd.conf
             - ./conf/apache2/httpd-ssl.conf:/usr/local/apache2/conf/extra/httpd-ssl.conf
             - ./logs/apache/:/usr/local/apache2/logs/
