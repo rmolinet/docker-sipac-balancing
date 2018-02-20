@@ -1,7 +1,12 @@
-# sipac_balancing
-Configuracion para docker compose con Nginx como proxy-reverse y como balanceador de carga para Apache server.
+# Sipac Docker Compose Balancing Server
+Configuration for docker compose with Nginx as a proxy-reverse and as a load balancer for the Apache server.
 
---
-git clone https://github.com/rmolinet/sipac_balancing.git
-cd sipac_balancing
-docker-compose up --scale apache_sipac=4
+# Getting started
+
+**Execute of following command**
+
+`git clone https://github.com/rmolinet/sipac_balancing.git`
+
+`cd sipac_balancing`
+
+`docker-compose up --scale apache_sipac=4`
