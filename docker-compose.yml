@@ -7,6 +7,8 @@ services:
             - "80:80"
             - "443:443"  
         volumes:
+            #Siguiente linea especificar la direccion con el codigo fuente de sipac.
+            #- ./conf/sipac_2.4:/var/www/html/sipac_2.4
             - ./logs/nginx/:/var/log/nginx
             - ./conf/nginx.conf:/etc/nginx/nginx.conf
             - ./conf/default-nginx.conf:/etc/nginx/conf.d/default.conf
