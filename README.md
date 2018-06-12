@@ -5,8 +5,8 @@ Configuration for docker compose with Nginx as a proxy-reverse and as a load bal
 
 **Execute of following command**
 
-`git clone https://github.com/rmolinet/sipac_balancing.git`
+`git clone https://github.com/rmolinet/docker-sipac-deployment.git`
 
-`cd sipac_balancing`
+`cd docker-sipac-deployment`
 
-`docker-compose up --scale apache_sipac=4`
+`docker-compose up --scale apache2=4`
