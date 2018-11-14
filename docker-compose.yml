@@ -75,7 +75,7 @@ services:
         restart: always 
 
     pgadmin4:
-        image: rmolinet/sipac-pgadmin4:3.5
+        image: rmolinet/sipac-pgadmin4:3.4
         ports:
             - "5050:5050"
         depends_on:
