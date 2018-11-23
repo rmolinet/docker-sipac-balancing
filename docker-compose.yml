@@ -26,7 +26,7 @@ services:
                 constraints: [node.role == manager]
         
     php5_fpm:
-        image: rmolinet/sipac-php-alpine:4.0
+        image: rmolinet/php5.6-fpm-alpine
         volumes:
             #Siguiente linea especificar la direccion con el codigo fuente de sipac.
             #- ../Docker-SIPAC/conf/sipac_2.4:/usr/local/apache2/htdocs/
